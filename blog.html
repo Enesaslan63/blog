@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- HTML5 belgesi başlatılır -->
+<html lang="en"> <!-- Sayfa dilini İngilizce olarak belirtir -->
+<head>
+    <meta charset="UTF-8"> <!-- Sayfanın karakter setini UTF-8 olarak ayarlar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sayfanın mobil uyumluluğunu sağlar -->
+    <title>Document</title> <!-- Sayfa başlığını belirler -->
+    <link rel="stylesheet" href="blog.css"> <!-- Dış stil dosyasını (CSS) sayfaya dahil eder -->
+
+</head>
+
+<body> <!-- Sayfanın gövdesi başlar -->
+    <div id="kutu1"> <!-- Sayfa içeriğinin yer alacağı ana kutu -->
+      <div id="kutu2"> <!-- Başlık kutusu -->
+        Kişisel Blog <!-- Ana başlık -->
+      </div>
+      <div id="anasayfa" onclick="anasayfa()"> <!-- Anasayfa butonuna tıklandığında çalışacak JavaScript fonksiyonu -->
+        <button id="button1"> <!-- Anasayfa butonu -->
+         Anasayfa <!-- Butonun metni -->
+        </button>
+      </div>
+       <div id="hakkımda" onclick="hakkımda()"> <!-- Hakkımda butonuna tıklandığında çalışacak JavaScript fonksiyonu -->
+        <button id="button1"> <!-- Hakkımda butonu -->
+        Hakkımda <!-- Butonun metni -->
+        </button>
+       </div>
+       <div id="projeler"> <!-- Projeler butonuna tıklandığında çalışacak JavaScript fonksiyonu -->
+        <button id="button1"> <!-- Projeler butonu -->
+         Projeler <!-- Butonun metni -->
+        </button>
+       </div>
+        <div id="iletişim"> <!-- İletişim butonuna tıklandığında çalışacak JavaScript fonksiyonu -->
+         <button id="button1"> <!-- İletişim butonu -->
+         İletişim <!-- Butonun metni -->
+         </button>
+        </div>
+    
+    </div>
+    <button class="animated-button">Tıkla</button>
+
+     <img id="image" src="emin.png" alt="kendi resmim"> <!-- Sayfada görüntülenmesini istediğiniz resim -->
+    <script src="blog.js"></script> <!-- Dış JavaScript dosyasını sayfaya dahil eder -->
+</body>
+</html>

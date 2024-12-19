@@ -1,0 +1,119 @@
+body{
+    background-color: black;
+}
+#kutu1 {
+    margin: 0; /* Dış boşluğu sıfırlar */
+    padding: 0; /* İç boşluğu sıfırlar */
+    width: 1520px; /* Kutunun genişliğini ayarlar */
+    height: 70px; /* Kutunun yüksekliğini ayarlar */
+    background-color: rgb(76, 72, 72); /* Arka plan rengini koyu gri yapar */
+    display: flex; /* Flex düzenini kullanarak öğeleri yatayda hizalar */
+    align-items: center; /* Yükseklik olarak öğeleri dikeyde ortalar */
+    justify-content: flex-start; /* Öğeleri sola hizalar */
+    
+}
+
+#kutu2 {
+    margin: 0 auto; /* Etrafındaki boşlukları sıfırlar ve kutuyu ortalar */
+    text-align: justify; /* Metni her iki yana yaslar (gerektiğinde kelimeleri yayar) */
+    font-size: 50px; /* Yazı boyutunu 50px olarak ayarlar */
+    margin-left: 625px; /* Kutunun sol tarafına 625px boşluk bırakır */
+    cursor: pointer;
+}
+
+#anasayfa {
+    text-align: start; /* Metni sola hizalar */
+    font-size: 18px; /* Yazı boyutunu 18px olarak ayarlar */
+    color: white; /* Yazı rengini beyaz yapar */
+    margin-right: 10px; /* Sağ tarafa 10px boşluk bırakır */
+}
+
+#hakkımda {
+    text-align: start; /* Metni sola hizalar */
+    font-size: 18px; /* Yazı boyutunu 18px olarak ayarlar */
+    color: white; /* Yazı rengini beyaz yapar */
+    margin-right: 10px; /* Sağ tarafa 10px boşluk bırakır */
+}
+
+#projeler {
+    text-align: start; /* Metni sola hizalar */
+    font-size: 18px; /* Yazı boyutunu 18px olarak ayarlar */
+    color: white; /* Yazı rengini beyaz yapar */
+    margin-right: 10px; /* Sağ tarafa 10px boşluk bırakır */
+}
+
+#iletişim {
+    text-align: start; /* Metni sola hizalar */
+    font-size: 18px; /* Yazı boyutunu 18px olarak ayarlar */
+    color: white; /* Yazı rengini beyaz yapar */
+    margin-right: 10px; /* Sağ tarafa 10px boşluk bırakır */
+}
+
+#image {
+    width: 150px; /* Resmin genişliğini 150px olarak ayarlar */
+    height: 150px; /* Resmin yüksekliğini 150px olarak ayarlar */
+    margin-left: 670px; /* Sol tarafa 670px boşluk bırakır */
+    margin-top: 20px; /* Üst tarafa 20px boşluk bırakır */
+    cursor: pointer; /* Fare ile üzerine gelindiğinde el simgesi çıkar */
+    border-radius: 50%; /* Resmi yuvarlak hale getirir */
+    object-fit: cover; /* Resmin şekli bozulmadan, belirlenen alana sığacak şekilde kırpılmasını sağlar */
+}
+
+#button1 {
+    background-color: rgb(76, 72, 72); /* Butonun arka plan rengini koyu gri yapar */
+    text-align: start; /* Metni sola hizalar */
+    font-size: 18px; /* Yazı boyutunu 18px olarak ayarlar */
+    color: white; /* Yazı rengini beyaz yapar */
+    margin-right: 10px; /* Sağ tarafa 10px boşluk bırakır */
+    border: none; /* Butonun etrafındaki kenarlığı kaldırır */
+    padding: 10px 20px; /* Butonun içine 10px üst ve alt, 20px sağ ve sol boşluk bırakır */
+    cursor: pointer; /* Fare ile üzerine gelindiğinde el simgesi çıkar */
+}
+/*  egragrhadfh*/
+
+/* Butonun temel stilini tanımlıyoruz */
+.animated-button {
+    background-color: #3498db; /* Mavi renk */
+    color: white; /* Metin rengi beyaz */
+    border: none; /* Kenarlık yok */
+    padding: 15px 30px; /* İç boşluk */
+    font-size: 16px; /* Yazı boyutu */
+    text-align: center; /* Metni ortalar */
+    cursor: pointer; /* Fareyi buton üzerine getirdiğinizde el simgesi */
+    border-radius: 8px; /* Köşeleri yuvarlatır */
+    transition: all 0.3s ease; /* Butonun tüm özellikleri geçişle değişir */
+}
+
+/* Buton üzerine gelindiğinde animasyon uygulamak */
+.animated-button:hover {
+    background-color: #2c3e50; /* Renk değişir */
+    transform: scale(1.1); /* Buton biraz büyür */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+}
+
+/* Butonun odaklandığında (focus) yaptığı animasyon */
+.animated-button:focus {
+    outline: none; /* Odaklandığında kenarlık görünmesin */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 1); /* Mavi ışık efekti */
+}
+
+/* Yavaşça renk değişimi için keyframes animasyonu */
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+        background-color: #3498db; /* Başlangıç rengi */
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #402ecc; /* Orta nokta rengi */
+    }
+    100% {
+        transform: scale(1);
+        background-color: #3498db; /* Sonraki rengi */
+    }
+}
+
+/* Buton yavaşça animasyonla renk değiştirecek */
+.animated-button:active {
+    animation: buttonAnimation 0.6s ease-in-out;
+}
